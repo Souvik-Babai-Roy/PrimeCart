@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PrimeCart : Login</title>
+	<link rel="stylesheet" href="Styles/style.css">
+	<style>
+		.btn {
+			position: relative;
+			width: 100%;
+			height: 45px;
+			background: transparent;
+			border-radius: 40px;
+			cursor: pointer;
+			font-size: 16px;
+			font-weight: 600;
+			border: 2px solid #ff2770;
+			overflow: hidden;
+			z-index: 1;
+		}
+
+		.btn::before {
+			content: "";
+			position: absolute;
+			height: 300%;
+			width: 100%;
+			background: linear-gradient(#25252b, #ff2770, #25252b, #ff2770);
+			top: -100%;
+			left: 0;
+			z-index: -1;
+			transition: 0.5s;
+		}
+
+		.btn:hover:before {
+			top: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<form action="LoginServlet" method="post">
+		<div class="wrapper">
+			<div class="container">
+				<div class="login-form">
+					<span class="form-title">Log in</span>
+					<div class="form-group">
+						<label for="username">User Name</label> <input type="text" id="username" name="username"
+							required class="form-control" placeholder="User Name">
+					</div>
+					<div class="form-group">
+						<label for="txtpswd">Password</label> <input type="password" id="password" name="password"
+							required class="form-control" placeholder="Enter Password">
+					</div>
+					<div class="form-group">
+						<span class="remember-link-left">
+							<label>
+								<input type="checkbox" id="chkremember" name="remember"> Remember Me
+							</label>
+						</span> <span class="forgot-link-right"><a href="#">Forgot
+								password?</a></span>
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary btn-lg btn-block" id="btnlogin">
+							<i class="fas fa-unlock"></i> <span class="button__text">Log
+								In Now</span>
+						</button>
+					</div>
+					<p>
+						Don't have an account? <a href="register.html">Register here</a>.
+					</p>
+				</div>
+				<div class="login-left">
+					<h2>Welcome to PrimeCart!</h2>
+					<h3>PrimeCart – Where Shopping Dreams Come True!</h3>
+					<br>
+					<p>
+						Browse our collection and elevate your lifestyle with premium brands and exciting deals. Join
+						millions
+						who trust PrimeCart for their shopping needs. <br>
+						Discover, shop, and save on every item.
+					</p>
+				</div>
+			</div>
+			<div class="copyright">
+				&copy; 2025 All rights reserved | Designed by <i><a href="https://github.com/Souvik-Babai-Roy"
+						target="_blank"><strong>Souvik
+							Roy</strong></a></i> & <i><a href="https://linkedin.com/in/aratrika-dey-34b72919b"
+						target="_blank"><strong>Aratrika Dey</strong></a></i>
+			</div>
+		</div>
+	</form>
+	<script src="script/script1.js"></script>
+	<script>
+        // JavaScript function to get a cookie by name
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+
+        // Populate the username field if the cookie exists
+        window.onload = function() {
+            const savedUsername = getCookie("username");
+            if (savedUsername) {
+                document.getElementById("username").value = savedUsername;
+                document.getElementById("chkremember").checked = true;
+            }
+        };
+    </script>
+</body>
+
+</html>

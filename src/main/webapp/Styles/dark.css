@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-weight: 300;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: #555;
+	background-color: white;
+	transition: background 0.2s linear;
+}
+
+/* Flex and layout styles */
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 50px;
+	min-height: 750px;
+}
+
+.container {
+	display: flex;
+	width: 100%;
+	max-width: 900px;
+	box-shadow: 10px 0px 30px rgba(0, 0, 0, 0.27);
+	background: #fff;
+	overflow: hidden;
+}
+
+.login-left {
+	flex: 1;
+	background: indigo;
+	color: white;
+	padding: 50px;
+}
+
+/* Form styles */
+.login-form {
+	flex: 1;
+	padding: 50px;
+}
+
+.form-title {
+	font-size: 25px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+.forgot-link {
+	float: right;
+	font-size: 0.9em;
+}
+
+.btn {
+	width: 100%;
+	color: #fff;
+	background-color: indigo;
+	font-size: 1.1rem;
+	border: none;
+	padding: 0.75em;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+.copyright {
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+/* Dark Mode Styling */
+body[data-theme="dark"] {
+	background-color: #121212;
+	color: #e0e0e0;
+}
+
+body[data-theme="dark"] .container {
+	background-color: #1e1e1e;
+}
+
+body[data-theme="dark"] .login-left,
+body[data-theme="dark"] .login-form {
+	background-color: #333;
+	color: #e0e0e0;
+}
+
+body[data-theme="dark"] .form-control {
+	background: #333;
+	color: #e0e0e0;
+	border: 1px solid #555;
+}
+
+body[data-theme="dark"] .btn {
+	background-color: #444;
+	color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+
+	.login-form,
+	.login-left {
+		width: 100%;
+		padding: 20px;
+	}
+}
+
+@media (max-width: 767px) {
+	.wrapper {
+		padding: 10px;
+	}
+}

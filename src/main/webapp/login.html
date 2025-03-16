@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PrimeCart : Login</title>
+<link rel="stylesheet" href="Styles/style.css">
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+
+
+<style>
+#btnlogin {
+	position: relative;
+	width: 100%;
+	height: 45px;
+	background: transparent;
+	border-radius: 40px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	border: 2px solid #ff2770;
+	overflow: hidden;
+	z-index: 1;
+}
+
+#btnlogin::before {
+	content: "";
+	position: absolute;
+	height: 300%;
+	width: 100%;
+	background: linear-gradient(#25252b, #ff2770, #25252b, #ff2770);
+	top: -100%;
+	left: 0;
+	z-index: -1;
+	transition: 0.5s;
+}
+
+#btnlogin:hover::before {
+	top: 0;
+}
+
+.form-group-password {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.form-group-password .form-control {
+	flex: 1; /* Makes the input field occupy available width */
+	padding-right: 40px;
+	/* Adds space for the button inside the input area */
+}
+
+.form-group-password .toggle-password {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	border: none;
+	background: transparent;
+	padding: 0;
+	cursor: pointer;
+	color: #6c757d; /* Matches default bootstrap button color */
+}
+</style>
+
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+	href="FontAwesome/fontawesome-free-6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+	<form action="LoginServlet" method="post">
+		<div class="wrapper">
+			<div class="container">
+				<div class="login-form">
+					<span class="form-title">Log in</span>
+					<div class="form-group">
+						<label for="username">Email</label> <input type="text"
+							id="email" name="email" required class="form-control"
+							placeholder="Enter Email ID">
+					</div>
+
+					<label for="password">Password</label>
+					<div class="form-group form-group-password">
+
+						<input type="password" class="form-control" id="password"
+							name="password" required placeholder="Enter Password">
+						<button class="toggle-password" type="button"
+							data-target="#password">
+							<i class="fa-solid fa-eye"></i>
+						</button>
+					</div>
+
+					<div class="form-group">
+						<span class="remember-link-left"> <label> <input
+								type="checkbox" id="chkremember" name="remember">
+								Remember Me
+						</label>
+						</span> <span class="forgot-link-right"><a href="#">Forgot
+								password?</a></span>
+					</div>
+					<div class="form-group">
+						<button type="submit"
+							class="btn btn-primary btn-lg btn-block btn-login" id="btnlogin">
+							<i class="fas fa-unlock"></i> <span class="button__text">Log
+								In Now</span>
+						</button>
+					</div>
+					<p>
+						Don't have an account? <a href="register.html">Register here</a>.
+					</p>
+				</div>
+				<div class="login-left">
+					<h2>Welcome to PrimeCart!</h2>
+					<h3>PrimeCart – Where Shopping Dreams Come True!</h3>
+					<br>
+					<p>
+						Browse our collection and elevate your lifestyle with premium
+						brands and exciting deals. Join millions who trust PrimeCart for
+						their shopping needs. <br> Discover, shop, and save on every
+						item.
+					</p>
+				</div>
+			</div>
+			<div class="copyright">
+				&copy; 2025 All rights reserved | Designed by <i><a
+					href="https://github.com/Souvik-Babai-Roy" target="_blank"><strong>Souvik
+							Roy</strong></a></i> & <i><a
+					href="https://linkedin.com/in/aratrika-dey-34b72919b"
+					target="_blank"><strong>Aratrika Dey</strong></a></i>
+			</div>
+		</div>
+	</form>
+	<script src="script/script1.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+	<script>
+		document
+				.querySelectorAll('.toggle-password')
+				.forEach(
+						function(btn) {
+							btn
+									.addEventListener(
+											'click',
+											function() {
+												const target = document
+														.querySelector(btn
+																.getAttribute('data-target'));
+												if (target.type === "password") {
+													target.type = "text";
+													btn.innerHTML = '<i class="fa-solid fa-eye-slash"></i>';
+												} else {
+													target.type = "password";
+													btn.innerHTML = '<i class="fa-solid fa-eye"></i>';
+												}
+											});
+						});
+	</script>
+
+	<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const message = urlParams.get('message'); // Get 'message'
+    const messageType = urlParams.get('messageType'); // Get 'messageType'
+
+    // Trigger Swal if a message is available
+    if (message.trim() !== "") {
+        Swal.fire({
+            title: 'Notification',
+            text: message,
+            icon: messageType, // Type can be 'success', 'error', 'warning', 'info', or 'question'
+            confirmButtonText: 'OK'
+        });
+    }
+    
+    window.history.replaceState(null, '', window.location.pathname);
+</script>
+</body>
+
+</html>

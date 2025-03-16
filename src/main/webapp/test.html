@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Product Images</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .file-list {
+            margin-top: 15px;
+        }
+        .file-item {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .file-item img {
+            max-width: 100px;
+            max-height: 100px;
+            margin-right: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .file-item button {
+            margin-left: 10px;
+        }
+        .upload-btns {
+            margin-top: 20px;
+        }
+        .file-preview {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .file-preview img {
+            max-width: 150px;
+            max-height: 150px;
+            border-radius: 5px;
+        }
+        .checkbox-label {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Upload Product Images</h2>
+
+        <!-- Add Image button -->
+        <button id="addImage" class="btn btn-primary mb-3">Add Image</button>
+
+        <!-- Preview section -->
+        <div id="previewContainer" class="file-preview"></div>
+
+        <!-- Buttons for uploading and removing files -->
+        <div class="upload-btns">
+            <button id="uploadAll" class="btn btn-primary">Upload All</button>
+            <button id="removeAll" class="btn btn-danger">Remove All</button>
+        </div>
+        
+        <!-- Hidden form to send data to servlet -->
+        <form id="uploadForm" action="UploadServlet" method="POST" enctype="multipart/form-data" style="display: none;">
+            <input type="hidden" name="productId" value="1"> <!-- Product ID hardcoded for demo -->
+            <div id="fileInputsContainer"></div>
+        </form>
+    </div>
+
+    <script>
+        const addImageButton = document.getElementById('addImage');
+        const uploadAllButton = document.getElementById('uploadAll');
+        const removeAllButton = document.getElementById('removeAll');
+        const previewContainer = document.getElementById('previewContainer');
+        const fileInputsContainer = document.getElementById('fileInputsContainer');
+        const uploadForm = document.getElementById('uploadForm');
+        let files = [];
+        let coverImageIndex = -1;  // Index of the selected cover image
+
+        // Function to handle image upload
+        function handleFileUpload(filesToAdd) {
+            filesToAdd.forEach((file, index) => {
+                // Add image to files array
+                files.push(file);
+                const fileDiv = document.createElement('div');
+                fileDiv.classList.add('file-item');
+
+                // Create image element
+                const img = document.createElement('img');
+                img.src = URL.createObjectURL(file);
+                img.alt = file.name;
+
+                // Remove button for the image
+                const removeButton = document.createElement('button');
+                removeButton.classList.add('btn', 'btn-danger', 'btn-sm');
+                removeButton.textContent = 'Remove';
+                removeButton.onclick = () => removeFile(index);
+
+                // Cover Image checkbox
+                const coverCheckbox = document.createElement('input');
+                coverCheckbox.type = 'checkbox';
+                coverCheckbox.classList.add('cover-checkbox');
+                coverCheckbox.checked = coverImageIndex === index;
+                coverCheckbox.addEventListener('change', () => setCoverImage(index));
+
+                const label = document.createElement('label');
+                label.classList.add('checkbox-label');
+                label.textContent = 'Cover Image';
+                label.setAttribute('for', `coverCheckbox${index}`);
+
+                // Append the image, remove button, and cover checkbox to the file item
+                fileDiv.appendChild(img);
+                fileDiv.appendChild(removeButton);
+                fileDiv.appendChild(coverCheckbox);
+                fileDiv.appendChild(label);
+                previewContainer.appendChild(fileDiv);
+
+                // Create hidden input to send to the form (to send image data)
+                const hiddenInput = document.createElement('input');
+                hiddenInput.type = 'file';
+                hiddenInput.name = `file${files.length - 1}`;
+                hiddenInput.files = new FileList();
+                hiddenInput.files = fileInput.files;
+                fileInputsContainer.appendChild(hiddenInput);
+            });
+        }
+
+        // Open the file dialog when Add Image button is clicked
+        addImageButton.addEventListener('click', function() {
+            const fileInput = document.createElement('input');
+            fileInput.type = 'file';
+            fileInput.accept = 'image/*';
+            fileInput.multiple = true;
+            fileInput.style.display = 'none';
+            fileInput.addEventListener('change', function(event) {
+                if (event.target.files.length > 0) {
+                    handleFileUpload(Array.from(event.target.files));
+                }
+            });
+            document.body.appendChild(fileInput);
+            fileInput.click();
+        });
+
+        // Remove image from the preview list and the files array
+        function removeFile(index) {
+            files.splice(index, 1);
+            displayPreviews();
+        }
+
+        // Set the selected cover image
+        function setCoverImage(index) {
+            coverImageIndex = index;
+        }
+
+        // Display image previews after modification (adding/removing)
+        function displayPreviews() {
+            previewContainer.innerHTML = '';  // Clear previews
+            fileInputsContainer.innerHTML = '';  // Clear file inputs
+
+            files.forEach((file, index) => {
+                // Create image preview again after update
+                const fileDiv = document.createElement('div');
+                fileDiv.classList.add('file-item');
+
+                const img = document.createElement('img');
+                img.src = URL.createObjectURL(file);
+                img.alt = file.name;
+
+                const removeButton = document.createElement('button');
+                removeButton.classList.add('btn', 'btn-danger', 'btn-sm');
+                removeButton.textContent = 'Remove';
+                removeButton.onclick = () => removeFile(index);
+
+                const coverCheckbox = document.createElement('input');
+                coverCheckbox.type = 'checkbox';
+                coverCheckbox.classList.add('cover-checkbox');
+                coverCheckbox.checked = coverImageIndex === index;
+                coverCheckbox.addEventListener('change', () => setCoverImage(index));
+
+                const label = document.createElement('label');
+                label.classList.add('checkbox-label');
+                label.textContent = 'Cover Image';
+                label.setAttribute('for', `coverCheckbox${index}`);
+
+                fileDiv.appendChild(img);
+                fileDiv.appendChild(removeButton);
+                fileDiv.appendChild(coverCheckbox);
+                fileDiv.appendChild(label);
+                previewContainer.appendChild(fileDiv);
+
+                // Hidden file input
+                const hiddenInput = document.createElement('input');
+                hiddenInput.type = 'file';
+                hiddenInput.name = `file${files.length - 1}`;
+                hiddenInput.files = fileInput.files;
+                fileInputsContainer.appendChild(hiddenInput);
+            });
+        }
+
+        // Remove all images
+        removeAllButton.addEventListener('click', function() {
+            files = [];
+            coverImageIndex = -1;
+            displayPreviews();
+        });
+
+        // Upload all images
+        uploadAllButton.addEventListener('click', function() {
+            if (files.length === 0) {
+                alert("Please select files to upload.");
+                return;
+            }
+
+            // Prepare form data for uploading
+            const formData = new FormData(uploadForm);
+            formData.append("coverImageIndex", coverImageIndex);
+
+            // Send the form data to the server
+            fetch('UploadServlet', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.json())
+            .then(data => alert(data.message))
+            .catch(error => console.error('Error uploading files:', error));
+        });
+    </script>
+</body>
+</html>

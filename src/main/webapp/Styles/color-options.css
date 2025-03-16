@@ -1,0 +1,2980 @@
+@charset "UTF-8";
+
+/* Basic Colors */
+.color-option.red {
+	background-color: red;
+}
+
+.color-option.black {
+	background-color: black;
+}
+
+.color-option.white {
+	background-color: white;
+}
+
+.color-option.blue {
+	background-color: blue;
+}
+
+.color-option.green {
+	background-color: green;
+}
+
+.color-option.yellow {
+	background-color: yellow;
+}
+
+.color-option.orange {
+	background-color: orange;
+}
+
+.color-option.pink {
+	background-color: pink;
+}
+
+.color-option.purple {
+	background-color: purple;
+}
+
+.color-option.brown {
+	background-color: brown;
+}
+
+.color-option.beige {
+	background-color: #e1b899;
+}
+
+.color-option.gray {
+	background-color: gray;
+}
+
+.color-option.silver {
+	background-color: silver;
+}
+
+.color-option.gold {
+	background-color: gold;
+}
+
+.color-option.turquoise {
+	background-color: #40e0d0;
+}
+
+.color-option.cyan {
+	background-color: cyan;
+}
+
+.color-option.lime {
+	background-color: lime;
+}
+
+.color-option.fuchsia {
+	background-color: fuchsia;
+}
+
+.color-option.violet {
+	background-color: violet;
+}
+
+.color-option.indigo {
+	background-color: indigo;
+}
+
+.color-option.olive {
+	background-color: olive;
+}
+
+.color-option.maroon {
+	background-color: maroon;
+}
+
+.color-option.coral {
+	background-color: coral;
+}
+
+.color-option.teal {
+	background-color: teal;
+}
+
+.color-option.slate {
+	background-color: #708090;
+}
+
+/* Pastel Colors */
+.color-option.pastel-blue {
+	background-color: #a3c6ff;
+}
+
+.color-option.pastel-pink {
+	background-color: #ffb6c1;
+}
+
+.color-option.pastel-yellow {
+	background-color: #ffeb99;
+}
+
+.color-option.mint {
+	background-color: #98ff98;
+}
+
+.color-option.peach {
+	background-color: #ffcc99;
+}
+
+.color-option.sky-blue {
+	background-color: #87ceeb;
+}
+
+.color-option.mauve {
+	background-color: #e0b0ff;
+}
+
+.color-option.light-coral {
+	background-color: #f08080;
+}
+
+.color-option.lavender {
+	background-color: #e6e6fa;
+}
+
+/* Earth Tones */
+.color-option.earth-brown {
+	background-color: #6b4226;
+}
+
+.color-option.olive-green {
+	background-color: #808000;
+}
+
+.color-option.sandy-brown {
+	background-color: #f4a300;
+}
+
+.color-option.terracotta {
+	background-color: #e2725b;
+}
+
+.color-option.slate-gray {
+	background-color: #708090;
+}
+
+/* Light Colors */
+.color-option.light-gray {
+	background-color: #d3d3d3;
+}
+
+.color-option.light-blue {
+	background-color: #add8e6;
+}
+
+.color-option.light-pink {
+	background-color: #ffb6c1;
+}
+
+.color-option.light-green {
+	background-color: #90ee90;
+}
+
+.color-option.light-yellow {
+	background-color: #ffffe0;
+}
+
+/* Dark Colors */
+.color-option.dark-gray {
+	background-color: #a9a9a9;
+}
+
+.color-option.dark-blue {
+	background-color: #00008b;
+}
+
+.color-option.dark-red {
+	background-color: #8b0000;
+}
+
+.color-option.dark-green {
+	background-color: #006400;
+}
+
+.color-option.dark-brown {
+	background-color: #654321;
+}
+
+/* Vibrant Colors */
+.color-option.fluorescent-pink {
+	background-color: #ff1493;
+}
+
+.color-option.fluorescent-green {
+	background-color: #39ff14;
+}
+
+.color-option.fluorescent-orange {
+	background-color: #ff5e00;
+}
+
+.color-option.fluorescent-yellow {
+	background-color: #d4ff00;
+}
+
+.color-option.fluorescent-blue {
+	background-color: #00ffff;
+}
+
+/* Neutral Colors */
+.color-option.light-beige {
+	background-color: #f5f5dc;
+}
+
+.color-option.dark-beige {
+	background-color: #d2b48c;
+}
+
+.color-option.light-brown {
+	background-color: #a52a2a;
+}
+
+.color-option.dark-brown {
+	background-color: #8b4513;
+}
+
+/* Other Color Variations */
+.color-option.fuchsia {
+	background-color: fuchsia;
+}
+
+.color-option.chartreuse {
+	background-color: chartreuse;
+}
+
+.color-option.burgundy {
+	background-color: #800020;
+}
+
+.color-option.periwinkle {
+	background-color: #ccccff;
+}
+
+.color-option.amber {
+	background-color: #ffbf00;
+}
+
+.color-option.tangerine {
+	background-color: #ff7f32;
+}
+
+.color-option.mauve {
+	background-color: #e0b0ff;
+}
+
+.color-option.azure {
+	background-color: #007fff;
+}
+
+.color-option.sea-green {
+	background-color: #2e8b57;
+}
+
+.color-option.steel-blue {
+	background-color: #4682b4;
+}
+
+.color-option.scarlet {
+	background-color: #ff2400;
+}
+
+.color-option.cobalt {
+	background-color: #0047ab;
+}
+
+.color-option.indian-red {
+	background-color: #cd5c5c;
+}
+
+.color-option.wheat {
+	background-color: #f5deb3;
+}
+
+/* Custom Colors */
+.color-option.turquoise-blue {
+	background-color: #00b5e2;
+}
+
+.color-option.dark-slate-gray {
+	background-color: #2f4f4f;
+}
+
+.color-option.firebrick {
+	background-color: #b22222;
+}
+
+.color-option.strawberry {
+	background-color: #fc5a8d;
+}
+
+.color-option.daffodil {
+	background-color: #ffff31;
+}
+
+.color-option.jade {
+	background-color: #00a86b;
+}
+
+.color-option.amethyst {
+	background-color: #9966cc;
+}
+
+.color-option.sapphire {
+	background-color: #0f52ba;
+}
+
+/* Additional Basic Colors */
+.color-option.scarlet {
+	background-color: #ff2400;
+}
+
+.color-option.crimson {
+	background-color: #dc143c;
+}
+
+.color-option.tomato {
+	background-color: #ff6347;
+}
+
+.color-option.forest-green {
+	background-color: #228b22;
+}
+
+.color-option.sea-green {
+	background-color: #2e8b57;
+}
+
+.color-option.lavender-blush {
+	background-color: #fff0f5;
+}
+
+.color-option.snow {
+	background-color: #fffafa;
+}
+
+.color-option.alice-blue {
+	background-color: #f0f8ff;
+}
+
+.color-option.light-cyan {
+	background-color: #e0ffff;
+}
+
+/* More Earth Tones */
+.color-option.stone {
+	background-color: #a2b29f;
+}
+
+.color-option.limestone {
+	background-color: #d1e3d1;
+}
+
+.color-option.slate {
+	background-color: #708090;
+}
+
+.color-option.navajo-white {
+	background-color: #ffdead;
+}
+
+.color-option.peach-puff {
+	background-color: #ffdab9;
+}
+
+.color-option.honeydew {
+	background-color: #f0fff0;
+}
+
+/* More Vibrant Colors */
+.color-option.jade {
+	background-color: #00a86b;
+}
+
+.color-option.amethyst {
+	background-color: #9966cc;
+}
+
+.color-option.tangerine {
+	background-color: #ff7f32;
+}
+
+.color-option.mint {
+	background-color: #98ff98;
+}
+
+.color-option.saffron {
+	background-color: #f4c430;
+}
+
+.color-option.turquoise {
+	background-color: #40e0d0;
+}
+
+.color-option.cherry {
+	background-color: #d2042d;
+}
+
+.color-option.bright-yellow {
+	background-color: #ffea00;
+}
+
+.color-option.bright-orange {
+	background-color: #ff6600;
+}
+
+/* More Pastel Colors */
+.color-option.pastel-green {
+	background-color: #77dd77;
+}
+
+.color-option.pastel-pink {
+	background-color: #ffb6c1;
+}
+
+.color-option.pastel-purple {
+	background-color: #c8a2c8;
+}
+
+.color-option.pastel-blue {
+	background-color: #a3c6ff;
+}
+
+.color-option.pastel-peach {
+	background-color: #ffcc99;
+}
+
+.color-option.pastel-lime {
+	background-color: #b9f6a1;
+}
+
+.color-option.pastel-orange {
+	background-color: #ffad60;
+}
+
+/* More Neutral Colors */
+.color-option.silver {
+	background-color: silver;
+}
+
+.color-option.steel {
+	background-color: #4682b4;
+}
+
+.color-option.champagne {
+	background-color: #f7e7ce;
+}
+
+.color-option.sand {
+	background-color: #c2b280;
+}
+
+.color-option.cloud {
+	background-color: #ecf0f1;
+}
+
+/* More Darker Tones */
+.color-option.coffee {
+	background-color: #6f4f28;
+}
+
+.color-option.charcoal {
+	background-color: #36454f;
+}
+
+.color-option.onyx {
+	background-color: #353839;
+}
+
+.color-option.dark-chocolate {
+	background-color: #3e2723;
+}
+
+.color-option.coal {
+	background-color: #212121;
+}
+
+.color-option.forest {
+	background-color: #228b22;
+}
+
+/* Rich Colors */
+.color-option.ruby {
+	background-color: #9b111e;
+}
+
+.color-option.sapphire {
+	background-color: #0f52ba;
+}
+
+.color-option.topaz {
+	background-color: #ffc87c;
+}
+
+.color-option.peridot {
+	background-color: #e4d00a;
+}
+
+.color-option.diamond {
+	background-color: #b9f2ff;
+}
+
+.color-option.garnet {
+	background-color: #9e1b32;
+}
+
+/* Soft Colors */
+.color-option.pearl {
+	background-color: #f1e4d3;
+}
+
+.color-option.mother-of-pearl {
+	background-color: #f6e4d3;
+}
+
+.color-option.cotton-candy {
+	background-color: #ffb3de;
+}
+
+.color-option.buttercup {
+	background-color: #f9c74f;
+}
+
+.color-option.melon {
+	background-color: #fbb13c;
+}
+
+.color-option.apricot {
+	background-color: #fbce9e;
+}
+
+/* Additional Blues */
+.color-option.aqua {
+	background-color: aqua;
+}
+
+.color-option.teal {
+	background-color: teal;
+}
+
+.color-option.midnight-blue {
+	background-color: #191970;
+}
+
+.color-option.azure {
+	background-color: #007fff;
+}
+
+.color-option.royal-blue {
+	background-color: #4169e1;
+}
+
+.color-option.sky-blue {
+	background-color: #87ceeb;
+}
+
+/* Additional Greens */
+.color-option.grass-green {
+	background-color: #7cfc00;
+}
+
+.color-option.moss-green {
+	background-color: #8a9a5b;
+}
+
+.color-option.eucalyptus {
+	background-color: #344d46;
+}
+
+.color-option.spring-green {
+	background-color: #00ff7f;
+}
+
+/* Bright Colors */
+.color-option.sunset-orange {
+	background-color: #fe4a49;
+}
+
+.color-option.fluorescent-blue {
+	background-color: #00ffff;
+}
+
+.color-option.tangerine-yellow {
+	background-color: #ffcc00;
+}
+
+.color-option.bright-pink {
+	background-color: #ff1493;
+}
+
+.color-option.fluorescent-pink {
+	background-color: #ff1493;
+}
+
+.color-option.electric-green {
+	background-color: #00ff00;
+}
+
+/* More Custom Colors */
+.color-option.rainbow {
+	background-color: linear-gradient(to right, red, orange, yellow, green, blue, indigo,
+			violet);
+}
+
+.color-option.copper {
+	background-color: #b87333;
+}
+
+.color-option.zinc {
+	background-color: #b7b8b7;
+}
+
+.color-option.alabaster {
+	background-color: #faf0e6;
+}
+
+.color-option.bronze {
+	background-color: #cd7f32;
+}
+
+.color-option.obsidian {
+	background-color: #1e1e1e;
+}
+
+/* Additional Basic Colors */
+.color-option.blush {
+	background-color: #f2d0a4;
+}
+
+.color-option.cantaloupe {
+	background-color: #ffa07a;
+}
+
+.color-option.flamingo {
+	background-color: #f94f4f;
+}
+
+.color-option.raspberry {
+	background-color: #e30b5c;
+}
+
+.color-option.pink-salmon {
+	background-color: #fa8072;
+}
+
+.color-option.rose {
+	background-color: #ff007f;
+}
+
+/* Additional Purple Tones */
+.color-option.lavender {
+	background-color: #e6e6fa;
+}
+
+.color-option.heather {
+	background-color: #d8bfd8;
+}
+
+.color-option.iris {
+	background-color: #5a4fcf;
+}
+
+.color-option.lilac {
+	background-color: #c8a2c8;
+}
+
+.color-option.periwinkle {
+	background-color: #8e82fe;
+}
+
+.color-option.wisteria {
+	background-color: #c9a0dc;
+}
+
+/* More Earth Tones */
+.color-option.dune {
+	background-color: #c8ad7f;
+}
+
+.color-option.mud {
+	background-color: #7f4f24;
+}
+
+.color-option.mahogany {
+	background-color: #c04000;
+}
+
+.color-option.cinnamon {
+	background-color: #d2691e;
+}
+
+.color-option.mauve {
+	background-color: #e0b0ff;
+}
+
+.color-option.taupe {
+	background-color: #483c32;
+}
+
+/* More Vibrant Colors */
+.color-option.viridian {
+	background-color: #40826d;
+}
+
+.color-option.cobalt {
+	background-color: #0047ab;
+}
+
+.color-option.fuchsia {
+	background-color: #ff00ff;
+}
+
+.color-option.magenta {
+	background-color: #ff00ff;
+}
+
+.color-option.amber {
+	background-color: #ffbf00;
+}
+
+.color-option.tangerine {
+	background-color: #ff6600;
+}
+
+/* Soft Colors */
+.color-option.bubblegum {
+	background-color: #ff77ff;
+}
+
+.color-option.sherbet {
+	background-color: #ffb3c1;
+}
+
+.color-option.lavender-rose {
+	background-color: #f7c6e0;
+}
+
+.color-option.pale-violet-red {
+	background-color: #db7093;
+}
+
+.color-option.pale-pink {
+	background-color: #fadadd;
+}
+
+.color-option.mint-cream {
+	background-color: #f1fffa;
+}
+
+/* More Neutral Tones */
+.color-option.khaki {
+	background-color: #f0e68c;
+}
+
+.color-option.stone-grey {
+	background-color: #807f7f;
+}
+
+.color-option.ash-grey {
+	background-color: #b2b2b2;
+}
+
+.color-option.sandstone {
+	background-color: #cfcfcf;
+}
+
+.color-option.putty {
+	background-color: #bdb7b1;
+}
+
+/* Bright & Neon Colors */
+.color-option.neon-green {
+	background-color: #39ff14;
+}
+
+.color-option.neon-blue {
+	background-color: #1b03a3;
+}
+
+.color-option.neon-pink {
+	background-color: #ff0ae5;
+}
+
+.color-option.neon-yellow {
+	background-color: #ffff00;
+}
+
+.color-option.neon-purple {
+	background-color: #9b00ff;
+}
+
+.color-option.neon-orange {
+	background-color: #ff5e00;
+}
+
+/* More Rich & Jewel Tones */
+.color-option.sapphire {
+	background-color: #0f52ba;
+}
+
+.color-option.topaz {
+	background-color: #ffc87c;
+}
+
+.color-option.amethyst {
+	background-color: #9966cc;
+}
+
+.color-option.emerald {
+	background-color: #50c878;
+}
+
+.color-option.turquoise {
+	background-color: #40e0d0;
+}
+
+.color-option.diamond {
+	background-color: #b9f2ff;
+}
+
+/* More Pastel Shades */
+.color-option.sweet-lavender {
+	background-color: #b497bd;
+}
+
+.color-option.soft-yellow {
+	background-color: #fff3b0;
+}
+
+.color-option.peach {
+	background-color: #ffcc99;
+}
+
+.color-option.butter {
+	background-color: #f4e1a1;
+}
+
+.color-option.pastel-green {
+	background-color: #77dd77;
+}
+
+.color-option.soft-pink {
+	background-color: #ffb6c1;
+}
+
+/* More Brown & Natural Tones */
+.color-option.pecan {
+	background-color: #9e7e4e;
+}
+
+.color-option.walnut {
+	background-color: #5c3d29;
+}
+
+.color-option.rosewood {
+	background-color: #65000b;
+}
+
+.color-option.hickory {
+	background-color: #6f4f28;
+}
+
+.color-option.sienna {
+	background-color: #a0522d;
+}
+
+.color-option.cherrywood {
+	background-color: #8b4000;
+}
+
+/* Cool & Calm Blues */
+.color-option.sky-blue {
+	background-color: #87ceeb;
+}
+
+.color-option.cobalt-blue {
+	background-color: #0047ab;
+}
+
+.color-option.ice-blue {
+	background-color: #99ccff;
+}
+
+.color-option.lake-blue {
+	background-color: #add8e6;
+}
+
+.color-option.storm-blue {
+	background-color: #5f6366;
+}
+
+/* Additional Green Tones */
+.color-option.cactus {
+	background-color: #597d3e;
+}
+
+.color-option.green-tea {
+	background-color: #a8d5ba;
+}
+
+.color-option.forest-moss {
+	background-color: #0a4d2f;
+}
+
+.color-option.olive-green {
+	background-color: #708238;
+}
+
+.color-option.moss-green {
+	background-color: #8a9a5b;
+}
+
+/* Rich Reds */
+.color-option.burgundy {
+	background-color: #800020;
+}
+
+.color-option.rosewood {
+	background-color: #65000b;
+}
+
+.color-option.wine {
+	background-color: #8b1a1a;
+}
+
+.color-option.ferrari-red {
+	background-color: #f20000;
+}
+
+.color-option.cherry-red {
+	background-color: #d2042d;
+}
+
+.color-option.merlot {
+	background-color: #7b001f;
+}
+
+/* More Bright & Playful Colors */
+.color-option.mango {
+	background-color: #ffb24d;
+}
+
+.color-option.papaya {
+	background-color: #ff7f00;
+}
+
+.color-option.orangeade {
+	background-color: #ff9d26;
+}
+
+.color-option.tangerine {
+	background-color: #ff6600;
+}
+
+.color-option.sunset {
+	background-color: #fe4a49;
+}
+
+/* Light & Bright Colors */
+.color-option.snow {
+	background-color: #fffafa;
+}
+
+.color-option.frost {
+	background-color: #e6f7ff;
+}
+
+.color-option.cotton-candy {
+	background-color: #ffb3de;
+}
+
+.color-option.pearl {
+	background-color: #f1e4d3;
+}
+
+.color-option.cream {
+	background-color: #fffdd0;
+}
+
+/* More Custom Colors */
+.color-option.rainbow-gradient {
+	background: linear-gradient(to right, red, orange, yellow, green, blue, indigo,
+			violet);
+}
+
+.color-option.sunshine {
+	background-color: #ffdd00;
+}
+
+.color-option.banana {
+	background-color: #ffeb3b;
+}
+
+.color-option.willow {
+	background-color: #6c7b52;
+}
+
+.color-option.caramel {
+	background-color: #c68e17;
+}
+
+/* Additional Tones and Shades */
+
+/* Dark Tones */
+.color-option.charcoal {
+	background-color: #36454f;
+}
+
+.color-option.onyx {
+	background-color: #353839;
+}
+
+.color-option.jet {
+	background-color: #343434;
+}
+
+.color-option.slate {
+	background-color: #708090;
+}
+
+.color-option.zinc {
+	background-color: #7f7f7f;
+}
+
+.color-option.dove {
+	background-color: #d3d3d3;
+}
+
+/* More Blue Tones */
+.color-option.royal-blue {
+	background-color: #4169e1;
+}
+
+.color-option.cyan {
+	background-color: #00ffff;
+}
+
+.color-option.azure {
+	background-color: #007fff;
+}
+
+.color-option.sky {
+	background-color: #87ceeb;
+}
+
+.color-option.navy {
+	background-color: #000080;
+}
+
+.color-option.indigo {
+	background-color: #4b0082;
+}
+
+/* More Green Tones */
+.color-option.jade {
+	background-color: #00a86b;
+}
+
+.color-option.lime {
+	background-color: #bfff00;
+}
+
+.color-option.kelly-green {
+	background-color: #4cbb17;
+}
+
+.color-option.pea-green {
+	background-color: #8e9a4f;
+}
+
+.color-option.chartreuse {
+	background-color: #7fff00;
+}
+
+.color-option.mint {
+	background-color: #98ff98;
+}
+
+/* More Red Tones */
+.color-option.coral {
+	background-color: #ff7f50;
+}
+
+.color-option.salmon {
+	background-color: #fa8072;
+}
+
+.color-option.tomato {
+	background-color: #ff6347;
+}
+
+.color-option.crimson {
+	background-color: #dc143c;
+}
+
+.color-option.blood-orange {
+	background-color: #fc4c02;
+}
+
+.color-option.ruby {
+	background-color: #9b111e;
+}
+
+/* More Yellow Tones */
+.color-option.goldenrod {
+	background-color: #daa520;
+}
+
+.color-option.mustard {
+	background-color: #ffdb58;
+}
+
+.color-option.amber {
+	background-color: #ffbf00;
+}
+
+.color-option.dandelion {
+	background-color: #f0e130;
+}
+
+.color-option.johnny-jump-up {
+	background-color: #cda434;
+}
+
+.color-option.light-goldenrod {
+	background-color: #fafad2;
+}
+
+/* More Orange Tones */
+.color-option.cantaloupe {
+	background-color: #ffb07c;
+}
+
+.color-option.marmalade {
+	background-color: #ff8c00;
+}
+
+.color-option.saffron {
+	background-color: #f4c430;
+}
+
+.color-option.pumpkin {
+	background-color: #ff7518;
+}
+
+.color-option.teracotta {
+	background-color: #e2725b;
+}
+
+.color-option.sweet-potato {
+	background-color: #e38b56;
+}
+
+/* Rich Jewel Tones */
+.color-option.emerald {
+	background-color: #50c878;
+}
+
+.color-option.ruby-red {
+	background-color: #9b111e;
+}
+
+.color-option.sapphire-blue {
+	background-color: #0f52ba;
+}
+
+.color-option.amethyst-purple {
+	background-color: #9966cc;
+}
+
+.color-option.topaz {
+	background-color: #ffc87c;
+}
+
+.color-option.turquoise {
+	background-color: #40e0d0;
+}
+
+/* More Pastels */
+.color-option.lavender-blush {
+	background-color: #fff0f5;
+}
+
+.color-option.peach-puff {
+	background-color: #ffdab9;
+}
+
+.color-option.pale-pink {
+	background-color: #fadadd;
+}
+
+.color-option.sweet-lavender {
+	background-color: #b497bd;
+}
+
+.color-option.lilac {
+	background-color: #c8a2c8;
+}
+
+.color-option.snow {
+	background-color: #fffafa;
+}
+
+/* More Earthy & Warm Tones */
+.color-option.umber {
+	background-color: #635147;
+}
+
+.color-option.dune {
+	background-color: #c8ad7f;
+}
+
+.color-option.taupe {
+	background-color: #483c32;
+}
+
+.color-option.pecan {
+	background-color: #9e7e4e;
+}
+
+.color-option.mud {
+	background-color: #7f4f24;
+}
+
+.color-option.mocha {
+	background-color: #3e2a47;
+}
+
+/* Warm Brown Tones */
+.color-option.cinnamon {
+	background-color: #d2691e;
+}
+
+.color-option.mahogany {
+	background-color: #c04000;
+}
+
+.color-option.sienna {
+	background-color: #a0522d;
+}
+
+.color-option.rosewood {
+	background-color: #65000b;
+}
+
+.color-option.cherrywood {
+	background-color: #8b4000;
+}
+
+.color-option.pine {
+	background-color: #2f4f4f;
+}
+
+/* Metallic Tones */
+.color-option.gold {
+	background-color: #ffd700;
+}
+
+.color-option.silver {
+	background-color: #c0c0c0;
+}
+
+.color-option.platinum {
+	background-color: #e5e4e2;
+}
+
+.color-option.bronze {
+	background-color: #cd7f32;
+}
+
+.color-option.copper {
+	background-color: #b87333;
+}
+
+.color-option.steel {
+	background-color: #4682b4;
+}
+
+/* Dark Purple Shades */
+.color-option.wisteria {
+	background-color: #c9a0dc;
+}
+
+.color-option.plum {
+	background-color: #8e4585;
+}
+
+.color-option.violet {
+	background-color: #8a2be2;
+}
+
+.color-option.purple {
+	background-color: #800080;
+}
+
+.color-option.fuchsia {
+	background-color: #ff00ff;
+}
+
+.color-option.lavender {
+	background-color: #e6e6fa;
+}
+
+/* Bright & Neon Colors */
+.color-option.neon-green {
+	background-color: #39ff14;
+}
+
+.color-option.neon-pink {
+	background-color: #ff0ae5;
+}
+
+.color-option.neon-blue {
+	background-color: #1b03a3;
+}
+
+.color-option.neon-orange {
+	background-color: #ff5e00;
+}
+
+.color-option.neon-yellow {
+	background-color: #ffff00;
+}
+
+.color-option.neon-purple {
+	background-color: #9b00ff;
+}
+
+/* Shades of Pink */
+.color-option.hot-pink {
+	background-color: #ff69b4;
+}
+
+.color-option.flamingo {
+	background-color: #f94f4f;
+}
+
+.color-option.bubblegum {
+	background-color: #ff77ff;
+}
+
+.color-option.pink-salmon {
+	background-color: #fa8072;
+}
+
+.color-option.deep-pink {
+	background-color: #ff1493;
+}
+
+.color-option.pale-violet {
+	background-color: #db7093;
+}
+
+/* Other Neutral Tones */
+.color-option.grey {
+	background-color: #808080;
+}
+
+.color-option.chalk {
+	background-color: #dcdcdc;
+}
+
+.color-option.ash {
+	background-color: #b2b2b2;
+}
+
+.color-option.stone {
+	background-color: #7c7c7c;
+}
+
+.color-option.shadow {
+	background-color: #d3d3d3;
+}
+
+.color-option.silver-grey {
+	background-color: #b8b8b8;
+}
+
+/* Grayscale Options */
+.color-option.black {
+	background-color: black;
+}
+
+.color-option.white {
+	background-color: white;
+}
+
+.color-option.silver {
+	background-color: #c0c0c0;
+}
+
+.color-option.grey {
+	background-color: #808080;
+}
+
+.color-option.dark-grey {
+	background-color: #505050;
+}
+
+.color-option.light-grey {
+	background-color: #d3d3d3;
+}
+
+/* Gradient Colors */
+.color-option.sunset-gradient {
+	background: linear-gradient(to right, #ff9a8b, #f7c7c7);
+}
+
+.color-option.rainbow-gradient {
+	background: linear-gradient(to right, #ff0000, #ff7300, #fffb00, #39ff14, #00c7ff,
+			#4b0082);
+}
+
+.color-option.aurora-gradient {
+	background: linear-gradient(to right, #ff0066, #6600cc, #00ffcc);
+}
+
+.color-option.moonlight-gradient {
+	background: linear-gradient(to right, #1c1c1c, #6a6a6a);
+}
+
+/* More Warm Colors */
+.color-option.buttercup {
+	background-color: #f9a602;
+}
+
+.color-option.sunshine {
+	background-color: #ffdd00;
+}
+
+.color-option.dandelion {
+	background-color: #f0e130;
+}
+
+.color-option.pineapple {
+	background-color: #ffda00;
+}
+
+/* More Light Pastels */
+.color-option.pastel-peach {
+	background-color: #ffbfa3;
+}
+
+.color-option.pastel-yellow {
+	background-color: #ffeb99;
+}
+
+.color-option.pastel-blue {
+	background-color: #a9c9ff;
+}
+
+.color-option.pastel-lavender {
+	background-color: #c9b4d4;
+}
+
+.color-option.pastel-mint {
+	background-color: #a9f5d0;
+}
+
+/* Soft & Muted Colors */
+.color-option.lilac-grey {
+	background-color: #9a9d9c;
+}
+
+.color-option.storm-grey {
+	background-color: #555c56;
+}
+
+.color-option.slate-grey {
+	background-color: #708090;
+}
+
+.color-option.misty-rose {
+	background-color: #ffe4e1;
+}
+
+/* Retro Color Palette */
+.color-option.vintage {
+	background-color: #bc8a5f;
+}
+
+.color-option.mellow-yellow {
+	background-color: #f8e300;
+}
+
+.color-option.lime-light {
+	background-color: #a8d200;
+}
+
+.color-option.seafoam {
+	background-color: #a1c3d1;
+}
+
+.color-option.vintage-rose {
+	background-color: #cbb0b0;
+}
+
+.color-option.black {
+	background-color: black;
+}
+
+.color-option.white {
+	background-color: white;
+}
+
+.color-option.blue {
+	background-color: blue;
+}
+
+.color-option.green {
+	background-color: green;
+}
+
+.color-option.yellow {
+	background-color: yellow;
+}
+
+.color-option.orange {
+	background-color: orange;
+}
+
+.color-option.pink {
+	background-color: pink;
+}
+
+.color-option.purple {
+	background-color: purple;
+}
+
+.color-option.brown {
+	background-color: brown;
+}
+
+.color-option.beige {
+	background-color: beige;
+}
+
+.color-option.gray {
+	background-color: gray;
+}
+
+.color-option.silver {
+	background-color: silver;
+}
+
+.color-option.gold {
+	background-color: gold;
+}
+
+.color-option.turquoise {
+	background-color: turquoise;
+}
+
+.color-option.cyan {
+	background-color: cyan;
+}
+
+.color-option.lime {
+	background-color: lime;
+}
+
+.color-option.fuchsia {
+	background-color: fuchsia;
+}
+
+.color-option.violet {
+	background-color: violet;
+}
+
+.color-option.indigo {
+	background-color: indigo;
+}
+
+.color-option.olive {
+	background-color: olive;
+}
+
+.color-option.maroon {
+	background-color: maroon;
+}
+
+.color-option.coral {
+	background-color: coral;
+}
+
+.color-option.teal {
+	background-color: teal;
+}
+
+.color-option.slate {
+	background-color: slate;
+}
+
+.color-option.pastel-blue {
+	background-color: pastel-blue;
+}
+
+.color-option.pastel-pink {
+	background-color: pastel-pink;
+}
+
+.color-option.pastel-yellow {
+	background-color: pastel-yellow;
+}
+
+.color-option.mint {
+	background-color: mint;
+}
+
+.color-option.peach {
+	background-color: peach;
+}
+
+.color-option.sky-blue {
+	background-color: sky-blue;
+}
+
+.color-option.mauve {
+	background-color: mauve;
+}
+
+.color-option.light-coral {
+	background-color: light-coral;
+}
+
+.color-option.lavender {
+	background-color: lavender;
+}
+
+.color-option.earth-brown {
+	background-color: earth-brown;
+}
+
+.color-option.olive-green {
+	background-color: olive-green;
+}
+
+.color-option.sandy-brown {
+	background-color: sandy-brown;
+}
+
+.color-option.terracotta {
+	background-color: terracotta;
+}
+
+.color-option.slate-gray {
+	background-color: slate-gray;
+}
+
+.color-option.light-gray {
+	background-color: light-gray;
+}
+
+.color-option.light-blue {
+	background-color: light-blue;
+}
+
+.color-option.light-pink {
+	background-color: light-pink;
+}
+
+.color-option.light-green {
+	background-color: light-green;
+}
+
+.color-option.light-yellow {
+	background-color: light-yellow;
+}
+
+.color-option.dark-gray {
+	background-color: dark-gray;
+}
+
+.color-option.dark-blue {
+	background-color: dark-blue;
+}
+
+.color-option.dark-red {
+	background-color: dark-red;
+}
+
+.color-option.dark-green {
+	background-color: dark-green;
+}
+
+.color-option.dark-brown {
+	background-color: dark-brown;
+}
+
+.color-option.fluorescent-pink {
+	background-color: fluorescent-pink;
+}
+
+.color-option.fluorescent-green {
+	background-color: fluorescent-green;
+}
+
+.color-option.fluorescent-orange {
+	background-color: fluorescent-orange;
+}
+
+.color-option.fluorescent-yellow {
+	background-color: fluorescent-yellow;
+}
+
+.color-option.fluorescent-blue {
+	background-color: fluorescent-blue;
+}
+
+.color-option.light-beige {
+	background-color: light-beige;
+}
+
+.color-option.dark-beige {
+	background-color: dark-beige;
+}
+
+.color-option.light-brown {
+	background-color: light-brown;
+}
+
+.color-option.dark-brown {
+	background-color: dark-brown;
+}
+
+.color-option.chartreuse {
+	background-color: chartreuse;
+}
+
+.color-option.burgundy {
+	background-color: burgundy;
+}
+
+.color-option.periwinkle {
+	background-color: periwinkle;
+}
+
+.color-option.amber {
+	background-color: amber;
+}
+
+.color-option.tangerine {
+	background-color: tangerine;
+}
+
+.color-option.azure {
+	background-color: azure;
+}
+
+.color-option.sea-green {
+	background-color: sea-green;
+}
+
+.color-option.steel-blue {
+	background-color: steel-blue;
+}
+
+.color-option.scarlet {
+	background-color: scarlet;
+}
+
+.color-option.cobalt {
+	background-color: cobalt;
+}
+
+.color-option.indian-red {
+	background-color: indian-red;
+}
+
+.color-option.wheat {
+	background-color: wheat;
+}
+
+.color-option.turquoise-blue {
+	background-color: turquoise-blue;
+}
+
+.color-option.dark-slate-gray {
+	background-color: dark-slate-gray;
+}
+
+.color-option.firebrick {
+	background-color: firebrick;
+}
+
+.color-option.strawberry {
+	background-color: strawberry;
+}
+
+.color-option.daffodil {
+	background-color: daffodil;
+}
+
+.color-option.jade {
+	background-color: jade;
+}
+
+.color-option.amethyst {
+	background-color: amethyst;
+}
+
+.color-option.sapphire {
+	background-color: sapphire;
+}
+
+.color-option.crimson {
+	background-color: crimson;
+}
+
+.color-option.tomato {
+	background-color: tomato;
+}
+
+.color-option.forest-green {
+	background-color: forest-green;
+}
+
+.color-option.lavender-blush {
+	background-color: lavender-blush;
+}
+
+.color-option.snow {
+	background-color: snow;
+}
+
+.color-option.alice-blue {
+	background-color: alice-blue;
+}
+
+.color-option.light-cyan {
+	background-color: light-cyan;
+}
+
+.color-option.stone {
+	background-color: stone;
+}
+
+.color-option.limestone {
+	background-color: limestone;
+}
+
+.color-option.slate {
+	background-color: slate;
+}
+
+.color-option.navajo-white {
+	background-color: navajo-white;
+}
+
+.color-option.peach-puff {
+	background-color: peach-puff;
+}
+
+.color-option.honeydew {
+	background-color: honeydew;
+}
+
+.color-option.saffron {
+	background-color: saffron;
+}
+
+.color-option.cherry {
+	background-color: cherry;
+}
+
+.color-option.bright-yellow {
+	background-color: bright-yellow;
+}
+
+.color-option.bright-orange {
+	background-color: bright-orange;
+}
+
+.color-option.pastel-green {
+	background-color: pastel-green;
+}
+
+.color-option.pastel-purple {
+	background-color: pastel-purple;
+}
+
+.color-option.pastel-peach {
+	background-color: pastel-peach;
+}
+
+.color-option.pastel-lime {
+	background-color: pastel-lime;
+}
+
+.color-option.pastel-orange {
+	background-color: pastel-orange;
+}
+
+.color-option.steel {
+	background-color: steel;
+}
+
+.color-option.champagne {
+	background-color: champagne;
+}
+
+.color-option.sand {
+	background-color: sand;
+}
+
+.color-option.cloud {
+	background-color: cloud;
+}
+
+.color-option.coffee {
+	background-color: coffee;
+}
+
+.color-option.charcoal {
+	background-color: charcoal;
+}
+
+.color-option.onyx {
+	background-color: onyx;
+}
+
+.color-option.dark-chocolate {
+	background-color: dark-chocolate;
+}
+
+.color-option.coal {
+	background-color: coal;
+}
+
+.color-option.forest {
+	background-color: forest;
+}
+
+.color-option.ruby {
+	background-color: ruby;
+}
+
+.color-option.topaz {
+	background-color: topaz;
+}
+
+.color-option.peridot {
+	background-color: peridot;
+}
+
+.color-option.diamond {
+	background-color: diamond;
+}
+
+.color-option.garnet {
+	background-color: garnet;
+}
+
+.color-option.pearl {
+	background-color: pearl;
+}
+
+.color-option.mother-of-pearl {
+	background-color: mother-of-pearl;
+}
+
+.color-option.cotton-candy {
+	background-color: cotton-candy;
+}
+
+.color-option.buttercup {
+	background-color: buttercup;
+}
+
+.color-option.melon {
+	background-color: melon;
+}
+
+.color-option.apricot {
+	background-color: apricot;
+}
+
+.color-option.aqua {
+	background-color: aqua;
+}
+
+.color-option.midnight-blue {
+	background-color: midnight-blue;
+}
+
+.color-option.royal-blue {
+	background-color: royal-blue;
+}
+
+.color-option.sky-blue {
+	background-color: sky-blue;
+}
+
+.color-option.grass-green {
+	background-color: grass-green;
+}
+
+.color-option.moss-green {
+	background-color: moss-green;
+}
+
+.color-option.eucalyptus {
+	background-color: eucalyptus;
+}
+
+.color-option.spring-green {
+	background-color: spring-green;
+}
+
+.color-option.sunset-orange {
+	background-color: sunset-orange;
+}
+
+.color-option.tangerine-yellow {
+	background-color: tangerine-yellow;
+}
+
+.color-option.bright-pink {
+	background-color: bright-pink;
+}
+
+.color-option.electric-green {
+	background-color: electric-green;
+}
+
+.color-option.rainbow {
+	background-color: rainbow;
+}
+
+.color-option.copper {
+	background-color: copper;
+}
+
+.color-option.zinc {
+	background-color: zinc;
+}
+
+.color-option.alabaster {
+	background-color: alabaster;
+}
+
+.color-option.bronze {
+	background-color: bronze;
+}
+
+.color-option.obsidian {
+	background-color: obsidian;
+}
+
+.color-option.blush {
+	background-color: blush;
+}
+
+.color-option.cantaloupe {
+	background-color: cantaloupe;
+}
+
+.color-option.flamingo {
+	background-color: flamingo;
+}
+
+.color-option.raspberry {
+	background-color: raspberry;
+}
+
+.color-option.pink-salmon {
+	background-color: pink-salmon;
+}
+
+.color-option.rose {
+	background-color: rose;
+}
+
+.color-option.heather {
+	background-color: heather;
+}
+
+.color-option.iris {
+	background-color: iris;
+}
+
+.color-option.lilac {
+	background-color: lilac;
+}
+
+.color-option.wisteria {
+	background-color: wisteria;
+}
+
+.color-option.dune {
+	background-color: dune;
+}
+
+.color-option.mud {
+	background-color: mud;
+}
+
+.color-option.mahogany {
+	background-color: mahogany;
+}
+
+.color-option.cinnamon {
+	background-color: cinnamon;
+}
+
+.color-option.taupe {
+	background-color: taupe;
+}
+
+.color-option.viridian {
+	background-color: viridian;
+}
+
+.color-option.magenta {
+	background-color: magenta;
+}
+
+.color-option.bubblegum {
+	background-color: bubblegum;
+}
+
+.color-option.sherbet {
+	background-color: sherbet;
+}
+
+.color-option.lavender-rose {
+	background-color: lavender-rose;
+}
+
+.color-option.pale-violet-red {
+	background-color: pale-violet-red;
+}
+
+.color-option.pale-pink {
+	background-color: pale-pink;
+}
+
+.color-option.mint-cream {
+	background-color: mint-cream;
+}
+
+.color-option.khaki {
+	background-color: khaki;
+}
+
+.color-option.stone-grey {
+	background-color: stone-grey;
+}
+
+.color-option.ash-grey {
+	background-color: ash-grey;
+}
+
+.color-option.sandstone {
+	background-color: sandstone;
+}
+
+.color-option.putty {
+	background-color: putty;
+}
+
+.color-option.neon-green {
+	background-color: neon-green;
+}
+
+.color-option.neon-blue {
+	background-color: neon-blue;
+}
+
+.color-option.neon-pink {
+	background-color: neon-pink;
+}
+
+.color-option.neon-yellow {
+	background-color: neon-yellow;
+}
+
+.color-option.neon-purple {
+	background-color: neon-purple;
+}
+
+.color-option.neon-orange {
+	background-color: neon-orange;
+}
+
+.color-option.emerald {
+	background-color: emerald;
+}
+
+.color-option.sweet-lavender {
+	background-color: sweet-lavender;
+}
+
+.color-option.soft-yellow {
+	background-color: soft-yellow;
+}
+
+.color-option.butter {
+	background-color: butter;
+}
+
+.color-option.sienna {
+	background-color: sienna;
+}
+
+.color-option.cherrywood {
+	background-color: cherrywood;
+}
+
+.color-option.ice-blue {
+	background-color: ice-blue;
+}
+
+.color-option.lake-blue {
+	background-color: lake-blue;
+}
+
+.color-option.storm-blue {
+	background-color: storm-blue;
+}
+
+.color-option.cactus {
+	background-color: cactus;
+}
+
+.color-option.green-tea {
+	background-color: green-tea;
+}
+
+.color-option.forest-moss {
+	background-color: forest-moss;
+}
+
+.color-option.wine {
+	background-color: wine;
+}
+
+.color-option.ferrari-red {
+	background-color: ferrari-red;
+}
+
+.color-option.cherry-red {
+	background-color: cherry-red;
+}
+
+.color-option.merlot {
+	background-color: merlot;
+}
+
+.color-option.mango {
+	background-color: mango;
+}
+
+.color-option.papaya {
+	background-color: papaya;
+}
+
+.color-option.orangeade {
+	background-color: orangeade;
+}
+
+.color-option.sunset {
+	background-color: sunset;
+}
+
+.color-option.frost {
+	background-color: frost;
+}
+
+.color-option.cream {
+	background-color: cream;
+}
+
+.color-option.rainbow-gradient {
+	background-color: rainbow-gradient;
+}
+
+.color-option.sunshine {
+	background-color: sunshine;
+}
+
+.color-option.banana {
+	background-color: banana;
+}
+
+.color-option.willow {
+	background-color: willow;
+}
+
+.color-option.caramel {
+	background-color: caramel;
+}
+
+.color-option.jet {
+	background-color: jet;
+}
+
+.color-option.dove {
+	background-color: dove;
+}
+
+.color-option.navy {
+	background-color: navy;
+}
+
+.color-option.alabaster {
+	background-color: alabaster;
+}
+
+.color-option.artichoke {
+	background-color: artichoke;
+}
+
+.color-option.ash-gray {
+	background-color: ash-gray;
+}
+
+.color-option.auburn {
+	background-color: auburn;
+}
+
+.color-option.azure {
+	background-color: azure;
+}
+
+.color-option.baby-blue {
+	background-color: baby-blue;
+}
+
+.color-option.baby-pink {
+	background-color: baby-pink;
+}
+
+.color-option.banana-yellow {
+	background-color: banana-yellow;
+}
+
+.color-option.bashful {
+	background-color: bashful;
+}
+
+.color-option.battle-ship-gray {
+	background-color: battle-ship-gray;
+}
+
+.color-option.beacon {
+	background-color: beacon;
+}
+
+.color-option.berry {
+	background-color: berry;
+}
+
+.color-option.black-olive {
+	background-color: black-olive;
+}
+
+.color-option.blue-gray {
+	background-color: blue-gray;
+}
+
+.color-option.blush-pink {
+	background-color: blush-pink;
+}
+
+.color-option.bottle-green {
+	background-color: bottle-green;
+}
+
+.color-option.bright-cyan {
+	background-color: bright-cyan;
+}
+
+.color-option.bright-lavender {
+	background-color: bright-lavender;
+}
+
+.color-option.bright-orange {
+	background-color: bright-orange;
+}
+
+.color-option.bright-red {
+	background-color: bright-red;
+}
+
+.color-option.bright-teal {
+	background-color: bright-teal;
+}
+
+.color-option.bronze-yellow {
+	background-color: bronze-yellow;
+}
+
+.color-option.butterfly {
+	background-color: butterfly;
+}
+
+.color-option.cadet-blue {
+	background-color: cadet-blue;
+}
+
+.color-option.camel {
+	background-color: camel;
+}
+
+.color-option.cantaloupe-orange {
+	background-color: cantaloupe-orange;
+}
+
+.color-option.caribbean-green {
+	background-color: caribbean-green;
+}
+
+.color-option.celadon {
+	background-color: celadon;
+}
+
+.color-option.celeste {
+	background-color: celeste;
+}
+
+.color-option.chalky-blue {
+	background-color: chalky-blue;
+}
+
+.color-option.champagne-blush {
+	background-color: champagne-blush;
+}
+
+.color-option.chartreuse-green {
+	background-color: chartreuse-green;
+}
+
+.color-option.cheese {
+	background-color: cheese;
+}
+
+.color-option.cherry-blossom {
+	background-color: cherry-blossom;
+}
+
+.color-option.chocolate-brown {
+	background-color: chocolate-brown;
+}
+
+.color-option.cinnamon-toast {
+	background-color: cinnamon-toast;
+}
+
+.color-option.citrine {
+	background-color: citrine;
+}
+
+.color-option.cloudy-gray {
+	background-color: cloudy-gray;
+}
+
+.color-option.cobalt-blue {
+	background-color: cobalt-blue;
+}
+
+.color-option.cocoa-brown {
+	background-color: cocoa-brown;
+}
+
+.color-option.coffee-bean {
+	background-color: coffee-bean;
+}
+
+.color-option.copper-penny {
+	background-color: copper-penny;
+}
+
+.color-option.cosmic-cobalt {
+	background-color: cosmic-cobalt;
+}
+
+.color-option.cotton-candy-pink {
+	background-color: cotton-candy-pink;
+}
+
+.color-option.daffodil-yellow {
+	background-color: daffodil-yellow;
+}
+
+.color-option.dandelion {
+	background-color: dandelion;
+}
+
+.color-option.dark-cyan {
+	background-color: dark-cyan;
+}
+
+.color-option.dark-lavender {
+	background-color: dark-lavender;
+}
+
+.color-option.dark-olive-green {
+	background-color: dark-olive-green;
+}
+
+.color-option.dark-peach {
+	background-color: dark-peach;
+}
+
+.color-option.dark-pink {
+	background-color: dark-pink;
+}
+
+.color-option.dawn-pink {
+	background-color: dawn-pink;
+}
+
+.color-option.dusty-rose {
+	background-color: dusty-rose;
+}
+
+.color-option.electric-blue {
+	background-color: electric-blue;
+}
+
+.color-option.electric-pink {
+	background-color: electric-pink;
+}
+
+.color-option.emerald-green {
+	background-color: emerald-green;
+}
+
+.color-option.fawn {
+	background-color: fawn;
+}
+
+.color-option.fawn-brown {
+	background-color: fawn-brown;
+}
+
+.color-option.flamingo-pink {
+	background-color: flamingo-pink;
+}
+
+.color-option.flax {
+	background-color: flax;
+}
+
+.color-option.forest-cyan {
+	background-color: forest-cyan;
+}
+
+.color-option.frosted-green {
+	background-color: frosted-green;
+}
+
+.color-option.fuchsia-rose {
+	background-color: fuchsia-rose;
+}
+
+.color-option.glacier {
+	background-color: glacier;
+}
+
+.color-option.glowing-amber {
+	background-color: glowing-amber;
+}
+
+.color-option.gold-cream {
+	background-color: gold-cream;
+}
+
+.color-option.grape-jelly {
+	background-color: grape-jelly;
+}
+
+.color-option.green-tea {
+	background-color: green-tea;
+}
+
+.color-option.green-turquoise {
+	background-color: green-turquoise;
+}
+
+.color-option.hazelnut {
+	background-color: hazelnut;
+}
+
+.color-option.honeycomb {
+	background-color: honeycomb;
+}
+
+.color-option.hydrangea {
+	background-color: hydrangea;
+}
+
+.color-option.indian-summer {
+	background-color: indian-summer;
+}
+
+.color-option.indigo-dye {
+	background-color: indigo-dye;
+}
+
+.color-option.jade-green {
+	background-color: jade-green;
+}
+
+.color-option.jasmine {
+	background-color: jasmine;
+}
+
+.color-option.kiwi {
+	background-color: kiwi;
+}
+
+.color-option.lavender-gray {
+	background-color: lavender-gray;
+}
+
+.color-option.lavender-pink {
+	background-color: lavender-pink;
+}
+
+.color-option.lime-green {
+	background-color: lime-green;
+}
+
+.color-option.lion-brown {
+	background-color: lion-brown;
+}
+
+.color-option.mellow-yellow {
+	background-color: mellow-yellow;
+}
+
+.color-option.mint-chocolate {
+	background-color: mint-chocolate;
+}
+
+.color-option.mud-brown {
+	background-color: mud-brown;
+}
+
+.color-option.nightshade {
+	background-color: nightshade;
+}
+
+.color-option.nostalgia-rose {
+	background-color: nostalgia-rose;
+}
+
+.color-option.orange-blossom {
+	background-color: orange-blossom;
+}
+
+.color-option.orange-brown {
+	background-color: orange-brown;
+}
+
+.color-option.pale-peach {
+	background-color: pale-peach;
+}
+
+.color-option.pale-rose {
+	background-color: pale-rose;
+}
+
+.color-option.pastel-gray {
+	background-color: pastel-gray;
+}
+
+.color-option.peach-fuzz {
+	background-color: peach-fuzz;
+}
+
+.color-option.periwinkle-blue {
+	background-color: periwinkle-blue;
+}
+
+.color-option.pine-green {
+	background-color: pine-green;
+}
+
+.color-option.purple-amethyst {
+	background-color: purple-amethyst;
+}
+
+.color-option.red-pink {
+	background-color: red-pink;
+}
+
+.color-option.rose-gold {
+	background-color: rose-gold;
+}
+
+.color-option.rosewood {
+	background-color: rosewood;
+}
+
+.color-option.ruby-red {
+	background-color: ruby-red;
+}
+
+.color-option.sapphire-blue {
+	background-color: sapphire-blue;
+}
+
+.color-option.scarlet-red {
+	background-color: scarlet-red;
+}
+
+.color-option.sea-foam {
+	background-color: sea-foam;
+}
+
+.color-option.shimmer {
+	background-color: shimmer;
+}
+
+.color-option.silk {
+	background-color: silk;
+}
+
+.color-option.silver-gray {
+	background-color: silver-gray;
+}
+
+.color-option.sky-teal {
+	background-color: sky-teal;
+}
+
+.color-option.snow-white {
+	background-color: snow-white;
+}
+
+.color-option.sophisticated-gray {
+	background-color: sophisticated-gray;
+}
+
+.color-option.spring-moss {
+	background-color: spring-moss;
+}
+
+.color-option.sunset-orange {
+	background-color: sunset-orange;
+}
+
+.color-option.sweet-basil {
+	background-color: sweet-basil;
+}
+
+.color-option.taffy {
+	background-color: taffy;
+}
+
+.color-option.tangerine-twist {
+	background-color: tangerine-twist;
+}
+
+.color-option.taupe-gray {
+	background-color: taupe-gray;
+}
+
+.color-option.teal-sheen {
+	background-color: teal-sheen;
+}
+
+.color-option.terra-cotta {
+	background-color: terra-cotta;
+}
+
+.color-option.topaz-yellow {
+	background-color: topaz-yellow;
+}
+
+.color-option.turquoise-green {
+	background-color: turquoise-green;
+}
+
+.color-option.watermelon {
+	background-color: watermelon;
+}
+
+.color-option.white-chocolate {
+	background-color: white-chocolate;
+}
+
+.color-option.wisteria-purple {
+	background-color: wisteria-purple;
+}
+
+.color-option.yellow-gold {
+	background-color: yellow-gold;
+}
+
+.color-option.yellow-mustard {
+	background-color: yellow-mustard;
+}
+
+.color-option.yoga {
+	background-color: yoga;
+}
+
+.color-option.zinfandel {
+	background-color: zinfandel;
+}
+
+.color-option.rose-pink {
+	background-color: rose-pink;
+}
+
+.color-option.dune-brown {
+	background-color: dune-brown;
+}
+
+.color-option.willow-green {
+	background-color: willow-green;
+}
+
+.color-option.saffron-yellow {
+	background-color: saffron-yellow;
+}
+
+.color-option.mango-yellow {
+	background-color: mango-yellow;
+}
+
+.color-option.midnight-black {
+	background-color: midnight-black;
+}
+
+.color-option.lilac-gray {
+	background-color: lilac-gray;
+}
+
+.color-option.holly-green {
+	background-color: holly-green;
+}
+
+.color-option.tangerine-red {
+	background-color: tangerine-red;
+}
+
+.color-option.mushroom-brown {
+	background-color: mushroom-brown;
+}
+
+.color-option.mauve-gray {
+	background-color: mauve-gray;
+}
+
+.color-option.moss-gray {
+	background-color: moss-gray;
+}
+
+.color-option.cloud-gray {
+	background-color: cloud-gray;
+}
+
+.color-option.mint-green {
+	background-color: mint-green;
+}
+
+.color-option.mauve-rose {
+	background-color: mauve-rose;
+}
+
+.color-option.caramel-brown {
+	background-color: caramel-brown;
+}
+
+.color-option.water-lily {
+	background-color: water-lily;
+}
+
+.color-option.moss-green {
+	background-color: moss-green;
+}
+
+.color-option.mauve-pink {
+	background-color: mauve-pink;
+}
+
+.color-option.watermelon-pink {
+	background-color: watermelon-pink;
+}
+
+.color-option.orange-pastel {
+	background-color: orange-pastel;
+}
+
+.color-option.spring-blossom {
+	background-color: spring-blossom;
+}
+
+.color-option.lilac-blush {
+	background-color: lilac-blush;
+}
+
+.color-option.sugar-plum {
+	background-color: sugar-plum;
+}
+
+.color-option.turquoise-blue {
+	background-color: turquoise-blue;
+}
+
+.color-option.periwinkle-gray {
+	background-color: periwinkle-gray;
+}
+
+.color-option.lime-sorbet {
+	background-color: lime-sorbet;
+}
+
+.color-option.frosted-lavender {
+	background-color: frosted-lavender;
+}
+
+.color-option.sunny-yellow {
+	background-color: sunny-yellow;
+}
+
+.color-option.frosty-pink {
+	background-color: frosty-pink;
+}
+
+.color-option.lavender-blue {
+	background-color: lavender-blue;
+}
+
+.color-option.fawn-pink {
+	background-color: fawn-pink;
+}
+
+.color-option.sunset-blush {
+	background-color: sunset-blush;
+}
+
+.color-option.mist {
+	background-color: mist;
+}
+
+.color-option.amaretto {
+	background-color: amaretto;
+}
+
+.color-option.iris-blossom {
+	background-color: iris-blossom;
+}
+
+.color-option.lavender-bloom {
+	background-color: lavender-bloom;
+}
+
+.color-option.cream-pink {
+	background-color: cream-pink;
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeCart : Register</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+
+    <style>
+        #btnregister {
+            position: relative;
+            width: 100%;
+            height: 45px;
+            background: transparent;
+            border-radius: 40px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            border: 2px solid #ff2770;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        #btnregister::before {
+            content: "";
+            position: absolute;
+            height: 300%;
+            width: 100%;
+            background: linear-gradient(#25252b, #ff2770, #25252b, #ff2770);
+            top: -100%;
+            left: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+
+        #btnregister:hover::before {
+            top: 0;
+        }
+
+        .form-group-password {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .form-group-password .form-control {
+            flex: 1;
+            padding-right: 40px;
+        }
+
+        .form-group-password .toggle-password {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            border: none;
+            background: transparent;
+            padding: 0;
+            cursor: pointer;
+            color: #6c757d;
+        }
+
+        /* Responsive layout for the form fields */
+        .form-group-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        /* Email field takes the full row */
+        .form-group-container .form-group.email-field {
+            flex: 1 1 100%; /* Full width */
+        }
+
+        /* Rest of the fields take half the row */
+        .form-group-container .form-group {
+            flex: 1 1 calc(50% - 15px); /* 2 columns */
+        }
+
+        /* Adjust to single column on small screens */
+        @media (max-width: 768px) {
+            .form-group-container .form-group {
+                flex: 1 1 100%; /* 1 column */
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="FontAwesome/fontawesome-free-6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <form action="RegisterServlet" method="post">
+        <div class="wrapper">
+            <div class="container" style="height: 600px;">
+                <div class="login-form">
+                    <span class="form-title">Register</span>
+
+                    <div class="form-group-container">
+                        <div class="form-group">
+                            <label for="firstname">First Name</label>
+                            <input type="text" id="firstname" name="firstname" required class="form-control" placeholder="Enter First Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" id="lastname" name="lastname" required class="form-control" placeholder="Enter Last Name">
+                        </div>
+
+                        <!-- Email field taking the full row -->
+                        <div class="form-group email-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required class="form-control" placeholder="Enter Email ID">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <div class="form-group-password">
+                                <input type="password" class="form-control" id="password" name="password" required placeholder="Enter Password">
+                                <button class="toggle-password" type="button" data-target="#password">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirmpassword">Confirm Password</label>
+                            <div class="form-group-password">
+                                <input type="password" class="form-control" id="confirmpassword" name="confirmpassword" required placeholder="Confirm Password">
+                                <button class="toggle-password" type="button" data-target="#confirmpassword">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="phone" name="phone" required class="form-control" placeholder="Enter Phone Number">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select class="form-control" id="gender" name="gender" required>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block" id="btnregister">
+                            <i class="fas fa-user-plus"></i> <span class="button__text">Register Now</span>
+                        </button>
+                    </div>
+
+                    <p>Already have an account? <a href="login.html">Login here</a>.</p>
+                </div>
+
+               <div class="login-left">
+    <h2>Welcome to PrimeCart</h2>
+    <h3>Join the PrimeCart Family Today!</h3>
+    <br>
+    <p>
+        Register now to access exclusive deals, premium products, and a seamless shopping experience. Become part of a community that values quality, convenience, and unbeatable offers. Sign up and start shopping smarter with PrimeCart.
+    </p>
+</div>
+               
+
+            </div>
+            <div class="copyright">
+                &copy; 2025 All rights reserved | Designed by <i><a href="https://github.com/Souvik-Babai-Roy" target="_blank"><strong>Souvik Roy</strong></a></i> & <i><a href="https://linkedin.com/in/aratrika-dey-34b72919b" target="_blank"><strong>Aratrika Dey</strong></a></i>
+            </div>
+        </div>
+    </form>
+
+    <script src="script/script1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        document.querySelectorAll('.toggle-password').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                const target = document.querySelector(btn.getAttribute('data-target'));
+                if (target.type === "password") {
+                    target.type = "text";
+                    btn.innerHTML = '<i class="fa-solid fa-eye-slash"></i>';
+                } else {
+                    target.type = "password";
+                    btn.innerHTML = '<i class="fa-solid fa-eye"></i>';
+                }
+            });
+        });
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const message = urlParams.get('message');
+        const messageType = urlParams.get('messageType');
+
+        if (message && message.trim() !== "") {
+            Swal.fire({
+                title: 'Notification',
+                text: message,
+                icon: messageType,
+                confirmButtonText: 'OK'
+            });
+        }
+
+        window.history.replaceState(null, '', window.location.pathname);
+    </script>
+</body>
+
+</html>

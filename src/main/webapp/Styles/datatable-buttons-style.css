@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+
+.dt-button-collection {
+	transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .dt-button-collection {
+	background-color: #343a40;
+	color: #fff;
+}
+
+body.light-mode .dt-button-collection {
+	background-color: #fff;
+	color: #212529;
+}
+
+/* Container for DataTable buttons */
+.dt-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem; /* Spacing between buttons */
+	margin-top: 0.5rem;
+	justify-content: flex-start;
+}
+
+/* General button styling */
+.dt-buttons .btn {
+	font-size: 0.875rem; /* Small button size */
+	padding: 0.375rem 0.75rem; /* Padding for consistent sizing */
+	border-radius: 0.25rem; /* Rounded corners */
+	transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Outline buttons with specific colors */
+.dt-buttons .btn-outline-primary {
+	border-color: #007bff;
+	color: #007bff;
+}
+
+.dt-buttons .btn-outline-primary:hover {
+	background-color: #007bff;
+	color: #fff;
+}
+
+.dt-buttons .btn-outline-success {
+	border-color: #28a745;
+	color: #28a745;
+}
+
+.dt-buttons .btn-outline-success:hover {
+	background-color: #28a745;
+	color: #fff;
+}
+
+.dt-buttons .btn-outline-info {
+	border-color: #17a2b8;
+	color: #17a2b8;
+}
+
+.dt-buttons .btn-outline-info:hover {
+	background-color: #17a2b8;
+	color: #fff;
+}
+
+.dt-buttons .btn-outline-danger {
+	border-color: #dc3545;
+	color: #dc3545;
+}
+
+.dt-buttons .btn-outline-danger:hover {
+	background-color: #dc3545;
+	color: #fff;
+}
+
+.dt-buttons .btn-outline-secondary {
+	border-color: #6c757d;
+	color: #6c757d;
+}
+
+.dt-buttons .btn-outline-secondary:hover {
+	background-color: #6c757d;
+	color: #fff;
+}
+
+/* Dynamic theme-based background */
+body.light-mode .dt-buttons .btn {
+	background-color: #f8f9fa; /* Light mode background */
+	color: #212529; /* Text color */
+}
+
+body.dark-mode .dt-buttons .btn {
+	background-color: #343a40; /* Dark mode background */
+	color: #f8f9fa; /* Light text for contrast */
+}
+
+body.light-mode .dt-buttons .btn:hover {
+	background-color: #e9ecef; /* Lighter hover background in light mode */
+}
+
+body.dark-mode .dt-buttons .btn:hover {
+	background-color: #495057; /* Lighter hover background in dark mode */
+}
+
+/* Column visibility dropdown button */
+.dt-buttons .btn.dropdown-toggle {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.dt-buttons .btn.dropdown-toggle .dt-down-arrow {
+	margin-left: 0.5rem; /* Space between text and down arrow */
+}
+
+body.light-mode .dt-buttons .dropdown-menu {
+	background-color: #fff;
+	color: #212529;
+	border: 1px solid #dee2e6;
+}
+
+body.dark-mode .dt-buttons .dropdown-menu {
+	background-color: #343a40;
+	color: #f8f9fa;
+	border: 1px solid #495057;
+}
